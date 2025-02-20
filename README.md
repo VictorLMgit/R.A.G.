@@ -1,5 +1,5 @@
-# Retrieval-Augmented Generation (RAG)
-
+# 🤖 Retrieval-Augmented Generation (RAG) 🔬
+![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
 ## 📌 Overview
 Retrieval-Augmented Generation (RAG) is an AI technique that combines **retrieval-based** and **generation-based** approaches to improve the quality and accuracy of generated text. This method enhances language models by allowing them to access external knowledge documents during the generation process, leading to more informative and context-aware responses.
 
@@ -63,7 +63,7 @@ model = SentenceTransformer("<Your embedding model>")
 An **embedding model** is a type of machine learning model that converts text into **dense numerical vectors** in a high-dimensional space. These vectors capture the **semantic meaning** of the text, enabling various NLP tasks.
  **In other words, we can apply mathematical operations to compare texts!** 🧮
 
-▶️ *Step Two:* Just embed our external knowledge from the docs for future comparisons.
+🌐 *Step Two:* Just embed our external knowledge from the docs for future comparisons.
 
 ```python
 from utilities import Docs
@@ -72,7 +72,7 @@ docs_embeddings = {
 }
 ```
 
-▶️ Using FastAPI or any other method to receive user input, we embed the input, compare it with our documents, and retrieve the external knowledge that is closest to the user's query.
+⚡ Using FastAPI or any other method to receive user input, we embed the input, compare it with our documents, and retrieve the external knowledge that is closest to the user's query.
 ```python
 from sentence_transformers import SentenceTransformer, util
 from fastapi import FastAPI
